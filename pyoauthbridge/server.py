@@ -12,7 +12,8 @@ class Server:
         self.client_id = client_id
         self.web_url = base_url
         self.client_secret = client_secret
-        self.redirect_uri = redirect_url
+        # self.redirect_uri = redirect_url
+        self.redirect_uri = 'http://127.0.0.1/'
         self.authorization_base_url = f'{self.web_url}/oauth2/auth'
         self.token_url = f'{self.web_url}/oauth2/token'
         self.scope = 'orders holdings'
